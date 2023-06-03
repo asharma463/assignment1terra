@@ -1,0 +1,11 @@
+# Ignore Terraform state files
+dev/instances/*.tfstate
+dev/instances/*.tfstate.backup
+dev/instances/*.tfplan
+dev/instances/.terraform/
+dev/instances/.terraform.lock.hcl
+
+# Ignore sensitive or environment-specific files
+dev/instances/*.tfvars
+dev/instances/assignment1-dev
+dev/instances/*.pub
