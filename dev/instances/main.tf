@@ -85,6 +85,33 @@ resource "aws_security_group" "my_sg" {
     cidr_blocks      = ["0.0.0.0/0"]
     ipv6_cidr_blocks = ["::/0"]
   }
+  
+  ingress {
+    description      = "HTTP from everywhere"
+    from_port        = 8021
+    to_port          = 8021
+    protocol         = "tcp"
+    cidr_blocks      = ["0.0.0.0/0"]
+    ipv6_cidr_blocks = ["::/0"]
+  }
+  
+  ingress {
+    description      = "HTTP from everywhere"
+    from_port        = 8022
+    to_port          = 8022
+    protocol         = "tcp"
+    cidr_blocks      = ["0.0.0.0/0"]
+    ipv6_cidr_blocks = ["::/0"]
+  }
+  
+  ingress {
+    description      = "HTTP from everywhere"
+    from_port        = 8023
+    to_port          = 8023
+    protocol         = "tcp"
+    cidr_blocks      = ["0.0.0.0/0"]
+    ipv6_cidr_blocks = ["::/0"]
+  }
 
   egress {
     from_port        = 0
