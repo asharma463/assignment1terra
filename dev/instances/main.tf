@@ -110,3 +110,11 @@ resource "aws_eip" "static_eip" {
     }
   )
 }
+
+resource "aws_ecr_repository" "apprepo" {
+  name = "apprepo"
+}
+
+resource "aws_ecr_repository" "databaserepo" {
+  name = "databaserepo"
+}
